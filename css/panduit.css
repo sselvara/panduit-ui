@@ -859,10 +859,6 @@ ul.pdt-pdp-features {
     .featured-products {
         padding: 110px 15px 50px;
     }
-    .col-md-4 {
-        width:33.33%;
-        float:left;
-    }
     .pdt-fp {
         width:auto;
     }
