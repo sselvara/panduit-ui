@@ -216,7 +216,7 @@ h6{
     padding: 0;
 }
 .pdt-title-lt, .pdt-cta-lt, .pdt-text-lt {
-   color:#fff; 
+   color:#fff;
 }
 .pdt-title-blue, .pdt-cta-blue, .pdt-title-sm-blue {
     color:#0077aa;
@@ -462,6 +462,22 @@ h6{
 .pdt-legal-links {
     float:right;
 }
+
+/** Footer form **/
+.pdt-catalog-form input{
+  border: 1px solid rgba(235, 235, 235, 0.3);
+  border-radius: 0;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 24px;
+  text-align: left;
+}
+
+.pdt-catalog-form .footer-form{
+  margin-top: 15px;
+}
+
 /** end homepage css **/
 /** begin product details **/
 .pdt-product-details {
@@ -551,7 +567,7 @@ h6{
     color:#303030;
 }
 .pdt-pdp-title {
-    font-weight: 700; 
+    font-weight: 700;
     margin-bottom: 0;
 }
 .pdt-pdp-subtitle {
@@ -750,7 +766,7 @@ ul.pdt-pdp-features {
 		color:#ed2024;
 	}
 	/* since 3.1.0 */
-	.navbar-collapse.collapse.in { 
+	.navbar-collapse.collapse.in {
 		display: block!important;
 	}
 	.collapsing {
@@ -981,7 +997,7 @@ ul.pdt-pdp-features {
 }
 
 @media all and (min-width: 320px) and (max-width:414px) {
-    
+
 
     .mobile-only {
         display:block;
