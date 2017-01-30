@@ -30,6 +30,49 @@ body {
     max-width:1280px;
     margin:0 auto;
 }
+
+
+/*** Typography styles ***/
+h1, h2, h3, h4, h5{
+    font-family: "museo-sans";
+}
+
+h1, h4, h5{
+    font-weight: 700;
+}
+
+h2, h3{
+    font-weight: 500;
+}
+
+h1{
+    font-size: 60px;
+    line-height: 68px;
+}
+h2{
+    font-size: 46px;
+    line-height: 52px;
+}
+h3{
+    font-size: 26px;
+    line-height: 32px;
+}
+h4{
+    font-size: 22px;
+    line-height: 28px;
+}
+h5{
+    font-size: 16px;
+    line-height: 22px;
+}
+h6{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+
 /*** gloabal nav ***/
 .navbar {
     border-radius:0;
@@ -627,6 +670,32 @@ ul.pdt-pdp-features {
 /** MEDIA QUERIES **/
 /** Tablet Landscape (1024px) **/
 @media all and (max-width: 1024px) {
+    /*** Typography styles ***/
+    h1{
+        font-size: 36px;
+        line-height: 42px;
+    }
+    h2{
+        font-size: 28px;
+        line-height: 34px;
+    }
+    h3{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    h4{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    h5{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    h6{
+        font-size: 14px;
+        line-height: 18px;
+    }
+
     /** navigation set to collapse at 1024px **/
     .navbar {
         height: 60px;
@@ -818,6 +887,7 @@ ul.pdt-pdp-features {
     }
 }
 @media all and (max-width: 768px) {
+
     .pdt-hero {
         height:330px;
     }
@@ -893,8 +963,26 @@ ul.pdt-pdp-features {
         min-height: 43px;
     }
 }
+
+@media all and (max-width:767px) {
+    /*** Typography styles ***/
+    h1{
+        font-size: 32px;
+        line-height: 38px;
+    }
+    h2{
+        font-size: 22px;
+        line-height: 28px;
+    }
+    h6{
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
 @media all and (min-width: 320px) and (max-width:414px) {
     
+
     .mobile-only {
         display:block;
     }
