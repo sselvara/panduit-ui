@@ -192,26 +192,15 @@ h6{
     width:100px;
 }
 .pdt-title-lrg-lt {
-    font-size:60px;
-    line-height: 68px;
     color:#fff;
-    font-weight:700;
     margin:10px 0 0 0;
     padding:0;
 }
 .pdt-title-lt, .pdt-title-blue {
-    font-size:46px;
-    line-height: 52px;
-    font-weight: 500;
     margin:10px 0 0 0;
     padding: 0;
-    font-family: "museo-sans";
 }
 .pdt-title-sm-blue {
-    font-size:26px;
-    line-height: 32px;
-    font-weight: 500;
-    font-family: "museo-sans";
     margin:10px 0 0 0;
     padding: 0;
 }
@@ -224,8 +213,6 @@ h6{
 .pdt-text, .pdt-text-lt {
     margin:10px 0 0 0;
     padding:0;
-    font-size:16px;
-    line-height: 24px;
 }
 .pdt-text {
     color:#56575A;
@@ -801,10 +788,7 @@ ul.pdt-pdp-features {
     .pdt-hero-cta:hover .pdt-upperline-lrg-lt {
         width:166px;
     }
-    .pdt-title-lrg-lt {
-        font-size: 36px;
-        line-height:42px;
-    }
+    
     /** end hero **/
     .pdt-cta-lt, .pdt-cta-blue {
         font-size:16px;
@@ -839,10 +823,7 @@ ul.pdt-pdp-features {
     .pdt-cta-right:hover .pdt-upperline-blue, .pdt-cta-right:hover .pdt-upperline-lt, .pdt-fp:hover .pdt-upperline-blue, .pdt-cta-left:hover .pdt-upperline-blue, .pdt-cta-left:hover .pdt-upperline-lt {
         width:90px;
     }
-    .pdt-title-lt, .pdt-title-blue {
-        font-size: 28px;
-        line-height:34px;
-    }
+    
     .pdt-text, .pdt-text-lt {
         font-size:14px;
         line-height: 20px;
@@ -978,6 +959,10 @@ ul.pdt-pdp-features {
     .pdt-pdp-img ul li.pdt-pdp-image {
         min-height: 43px;
     }
+
+    .pdt-catalog-form .footer-form .state-dropdown{
+        margin-bottom: 15px;
+    }
 }
 
 @media all and (max-width:767px) {
@@ -1039,10 +1024,7 @@ ul.pdt-pdp-features {
         margin:25px 0 0 9px;
         width:170px;
     }
-    .pdt-title-lt, .pdt-title-blue {
-        font-size: 20px;
-        line-height: 26px;
-    }
+    
     .pdt-text, .pdt-text-lt {
         font-size: 12px;
         line-height: 16px;
