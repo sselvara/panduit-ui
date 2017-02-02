@@ -30,8 +30,12 @@ body {
     max-width:1280px;
     margin:0 auto;
 }
-
-
+.pdt-align-left {
+       margin: 100px 0 0 150px;
+}
+.pdt-align-right{
+   margin:110px 180px 0 0; 
+}
 /*** Typography styles ***/
 h1, h2, h3, h4, h5{
     font-family: "museo-sans";
@@ -201,7 +205,7 @@ h6{
     position:relative;
 }
 .pdt-hero-cta {
-    margin:100px 0 0 150px;
+    /**margin:100px 0 0 150px*/;
     width:550px;
     font-family: "museo-sans";
 }
@@ -288,7 +292,7 @@ h6{
 }
 .pdt-cta-left {
     width:390px;
-    margin:100px 0 0 150px;
+   /** margin:100px 0 0 150px;**/
 }
 .pdt-nextgencableties {
     background:url(../images/bg-nextgencabletie.jpg) 0 0 no-repeat;
@@ -853,7 +857,7 @@ ul.pdt-pdp-features {
         margin-bottom:0px;
     }
     .pdt-cta-right {
-        margin:110px 180px 0 0;
+       /** margin:110px 180px 0 0;**/
         width:280px;
     }
     .pdt-cta-left {
