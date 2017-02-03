@@ -34,7 +34,7 @@ body {
        margin: 100px 0 0 150px;
 }
 .pdt-align-right{
-   margin:110px 180px 0 0; 
+   margin:110px 180px 0 0;
 }
 /*** Typography styles ******/
 h1, h2, h3, h4, h5{
@@ -61,7 +61,7 @@ h1::before {
   border-top: 9px solid;
   top:-20px;
   width: 200px;
-  border-radius:2px; 
+  border-radius:2px;
   transition: all .7s ease;
 }
 
@@ -79,7 +79,7 @@ h2::before {
   height: 5px;
   border-top: 9px solid ;
   width: 100px;
-  border-radius:2px; 
+  border-radius:2px;
   transition: all .7s ease;
   top:-20px;
 }
@@ -97,7 +97,7 @@ h3::before {
   height: 5px;
   border-top: 9px solid ;
   width: 100px;
-  border-radius:2px; 
+  border-radius:2px;
   transition: all .7s ease;
   top:-20px;
 }
@@ -199,7 +199,7 @@ h6{
 .pdt-hero {
     height:550px;
     width:100%;
-    background:url(../images/ptd-hero.png) 0 0 no-repeat;
+    background:url(../images/pdt-hero.png) 0 0 no-repeat;
     background-size:contain;
     z-index:10;
     position:relative;
@@ -836,7 +836,7 @@ ul.pdt-pdp-features {
     .pdt-hero-cta:hover .pdt-upperline-lrg-lt {
         width:166px;
     }
-    
+
     /** end hero **/
     .pdt-cta-lt, .pdt-cta-blue {
         font-size:16px;
@@ -871,7 +871,7 @@ ul.pdt-pdp-features {
     .pdt-cta-right:hover .pdt-upperline-blue, .pdt-cta-right:hover .pdt-upperline-lt, .pdt-fp:hover .pdt-upperline-blue, .pdt-cta-left:hover .pdt-upperline-blue, .pdt-cta-left:hover .pdt-upperline-lt {
         width:90px;
     }
-    
+
     .pdt-text, .pdt-text-lt {
         font-size:14px;
         line-height: 20px;
@@ -1072,7 +1072,7 @@ ul.pdt-pdp-features {
         margin:25px 0 0 9px;
         width:170px;
     }
-    
+
     .pdt-text, .pdt-text-lt {
         font-size: 12px;
         line-height: 16px;
