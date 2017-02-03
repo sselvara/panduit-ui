@@ -1,0 +1,20 @@
+{
+  "name": "Panduit UI v1.0",
+  "homepage": "https://github.com/sselvara/panduit-ui",
+  "authors": [
+    "Subash Selvaraj (sselvara@adobe.com)"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.7"
+  }
+}
