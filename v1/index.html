@@ -7,7 +7,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Panduit | Electrical and Network Cables, Connectivity, Wire Management</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-icons.css" rel="stylesheet">
     <link href="css/panduit.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
     <link href="css/checkbox.css" rel="stylesheet">
@@ -224,9 +225,9 @@
             <div class="pdt-contact">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-sm-4">
                             <a href="#">
-                                <img class="pdt-contact-icon" src="images/pdt-contact-phone-lt.svg"/>
+                                <i class="pdt-contact-icon icon-pdt-contact-phone"></i>
                                 <div class="pdt-contact-content">
                                     <p class="pdt-contact-title">800.777.3300</p>
                                     <p class="pdt-contact-text">Monday through Friday, 8am – 6pm, CST</p>
@@ -237,7 +238,7 @@
 
                         <div class="col-md-4 col-sm-4">
                             <a href="mailto:webmaster@example.com">
-                                <img class="pdt-contact-icon" src="images/pdt-contact-email-lt.svg"/>
+                                <i class="pdt-contact-icon icon-pdt-contact-email-lt"></i>
                                 <div class="pdt-contact-content">
                                     <p class="pdt-contact-title">Email Us</p>
                                     <p class="pdt-contact-text">For customer service &amp; technical matters</p>
@@ -245,9 +246,9 @@
                             </a>
                             <div class="clearfix"></div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-sm-4">
                             <a href="#">
-                                <img class="pdt-contact-icon" src="images/pdt-contact-location-lt.svg"/>
+                                <i class="pdt-contact-icon icon-pdt-contact-location-lt"></i>
                                 <div class="pdt-contact-content">
                                     <p class="pdt-contact-title">Where to Buy</p>
                                     <p class="pdt-contact-text">Find a Panduit Distributor or Partner</p>
@@ -284,7 +285,7 @@
                     </div>
                     <div class="pdt-more-info-catalog">
                         <div class="pdt-catalog-title-wrapper">
-                            <img src="images/pdt-catalog.svg" alt="Panduit catalog icon"/>
+                            <i class="icon-pdt-catalog"></i>
                             <div class="pdt-catalog-title-content">
                                 <p class="pdt-catalog-title">Get Our Catalog</p>
                                 <p class="pdt-catalog-text">Download the PDF or request a copy be mailed to you</p>
@@ -315,12 +316,24 @@
                     <div class="clearfix"></div>
                     <div class="pdt-more-info-soc">
                         <ul class="list-inline">
-                            <li><a href="#"><img src="images/pdt-soc-fb.svg" alt="Panduit Facebook"/></a></li>
-                            <li><a href="#"><img src="images/pdt-soc-google.svg" alt="Panduit Gooble+"/></a></li>
-                            <li><a href="#"><img src="images/pdt-soc-twitter.svg" alt="Panduit Twitter"/></a></li>
-                            <li><a href="#"><img src="images/pdt-soc-linkedin.svg" alt="Panduit LinkedIn"/></a></li>
-                            <li><a href="#"><img src="images/pdt-soc-youtube.svg" alt="Panduit Youtube"/></a></li>
-                            <li><a href="#"><img src="images/pdt-soc-weibo.svg" alt="Panduit Weibo"/></a></li>
+                            <li><a href="#"><i class="icon-pdt-soc-fb"></i></a></li>
+                            <li><a href="#"><i class="icon-pdt-soc-google"></i></a></li>
+                            <li><a href="#"><i class="icon-pdt-soc-twitter"></i></a></li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon-pdt-soc-linkedin">
+                                        <span class="path1"></span><span class="path2"></span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li><a href="#"><i class="icon-pdt-soc-youtube"></i></a></li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon-pdt-soc-weibo">
+                                        <span class="path1"></span><span class="path2"></span>
+                                    </span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
 
@@ -346,8 +359,8 @@
         <!-- end global footer -->
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="libs/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
