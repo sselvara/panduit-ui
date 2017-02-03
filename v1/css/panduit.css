@@ -1013,7 +1013,9 @@ ul.pdt-pdp-features {
         margin-bottom: 15px;
     }
 }
-
+.pdt-color-grey{
+    color: rgba(255,255,255,0.5);
+}
 @media all and (max-width:767px) {
     /*** Typography styles ***/
     h1{
@@ -1159,9 +1161,14 @@ ul.pdt-pdp-features {
         line-height: 14px;
     }
     .pdt-more-info ul {
-        width:260px;
-        margin: 0 auto;
-    }
+      }
+
+    .pdt-more-info-soc ul li a i {
+    font-size: 35px;  
+}
+.pdt-more-info-soc ul li a span[class^='icon-pdt'], .pdt-more-info-soc ul li a i{
+       font-size: 35px;
+}
     /****** PRODUCT DETAILS PAGE ******/
     .pdt-product-details, .pdt-product-sub-details {
         padding-bottom:30px;
