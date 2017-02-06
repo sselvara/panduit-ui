@@ -12,6 +12,7 @@
     <link href="css/font-icons.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
     <link href="css/checkbox.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
     <style type="text/css">
         .pdt-hero.pdt-slanted-img .svg-clipped{
             clip-path: url(#clip-slant);
@@ -32,8 +33,8 @@
     <!-- container for content -->
     <div class="pdt-wrapper">
         <!-- begin top global nav -->
-        <nav class="navbar">
-            <div class="container-fluid">
+        <nav class="navbar panduit-navbar">
+            <div class="container-fluid header-container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -44,56 +45,148 @@
                     <a class="navbar-brand" href="http://www.panduit.com/en/home"><img src="images/pdt-logo.svg"/></a>
                 </div>
 
+                <form class="navbar-form navbar-left panduit-search-box">
+                    <div class="form-group">
+                      <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                      <input type="text" class="form-control" placeholder="Keyword, Part Number or Cross-Ref">
+                    </div>
+                </form>
+
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Find Partner/Distributor</a></li>
-                        <li><a href="#"><i class="icon-pdt-contact-phone"></i>Contact Us</a></li>
-                        <li><a href="#"><i class="icon-pdt-myaccount"></i> My Account</a></li>
+                <div class="collapse navbar-collapse panduit-collapsible-navbar" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right panduit-eyebrow-nav">
+                        <li class="panduit-find-partner"><a href="#">Find Partner/Distributor</a></li>
+                        <li class="panduit-contact-us"><a href="#"><img src="images/pdt-contact-phone.svg"/>Contact Us</a></li>
+                        <li class="panduit-my-account"><a href="#"><img src="images/pdt-myaccount.svg"/> My Account</a></li>
                     </ul>
-                    <form class="navbar-form navbar-left">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Keyword, Part Number or Cross-Ref">
-                        </div>
-                    </form>
-                    <ul class="nav navbar-nav pdt-main-nav">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="uppercase">all products</span> <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">One more separated link</a></li>
+                    <div class="panduit-navbar">
+                      <ul class="nav navbar-nav panduit-main-nav">
+                        <li>
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">All Products<b class="caret"></b></a>
+                            <ul class="dropdown-menu multi-level">
+                              <li class="dropdown-submenu">
+                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cabinets Thermal Management Racks Enclsoures</a>
+                                  <ul class="dropdown-menu">
+                                      <li class="dropdown-submenu">
+                                          <a href="http://stackoverflow.com/questions/15697968/how-to-disable-bootstraps-button-dropdown" class="dropdown-toggle color-link" data-toggle="dropdown-toggle disabled">Cabinets</a>
+                                              <ul class="dropdown-menu">
+                                                  <li class="dropdown-submenu">
+                                                      <a href="http://stackoverflow.com/questions/15697968/how-to-disable-bootstraps-button-dropdown" class="dropdown-toggle color-link" data-toggle="dropdown-toggle disabled">Network Cabinet Accessories</a>
+                                                          <ul class="dropdown-menu">
+                                                              <li><a href="#">L4-1</a></li>
+                                                              <li><a href="#">L4-2</a></li>
+                                                              <li><a href="#">L4-3</a></li>
+                                                              <li><a href="#">L4-4</a></li>
+                                                              <li><a href="#">L4-5</a></li>
+                                                              <li><a href="#">L4-6</a></li>
+                                                          </ul>
+                                                  </li>
+                                                  <li><a href="#">Network Cabinets</a></li>
+                                                  <li><a href="#">Preconfigured Cabinets</a></li>
+                                                  <li><a href="#">Server Cabinets</a></li>
+                                                  <li><a href="#">Net-Verse Cabinets</a></li>
+                                                  <li><a href="#">Net-Verse Cabinets Accessories</a></li>
+                                              </ul>
+                                      </li>
+                                      <li><a href="#">Cable management</a></li>
+                                      <li><a href="#">Industrial Automation Enclosures</a></li>
+                                      <li><a href="#">Racks & Accessories</a></li>
+                                      <li><a href="#">Thermal management & Containment</a></li>
+                                      <li><a href="#">Zone Enclosures</a></li>
+                                  </ul>
+                              </li>
+                              <li><a href="#">Cable & Bundle Wiring</a></li>
+                              <li><a href="#">Cable Routing & Pathways</a></li>
+                              <li><a href="#">Copper Systems</a></li>
+                              <li><a href="#">Fiber Systems</a></li>
+                              <li><a href="#">Grounding Products</a></li>
+                              <li><a href="#">Identification</a></li>
+                              <li><a href="#">Power Distribution and Environmental Monitoring</a></li>
+                              <li><a href="#">Safety and Security</a></li>
+                              <li><a href="#">Software and Hardware</a></li>
+                              <li><a href="#">Tools</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="uppercase">solutions</span> <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">One more separated link</a></li>
+                        <li>
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Solutions<b class="caret"></b></a>
+                            <ul class="dropdown-menu multi-level">
+                              <li class="dropdown-submenu">
+                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cabinets Thermal Management Racks Enclsoures</a>
+                                  <ul class="dropdown-menu">
+                                      <li class="dropdown-submenu">
+                                          <a href="http://stackoverflow.com/questions/15697968/how-to-disable-bootstraps-button-dropdown" class="dropdown-toggle color-link" data-toggle="dropdown-toggle disabled">Cabinets</a>
+                                              <ul class="dropdown-menu">
+                                                  <li class="dropdown-submenu">
+                                                      <a href="http://stackoverflow.com/questions/15697968/how-to-disable-bootstraps-button-dropdown" class="dropdown-toggle color-link" data-toggle="dropdown-toggle disabled">Network Cabinet Accessories</a>
+                                                          <ul class="dropdown-menu">
+                                                              <li><a href="#">L4-1</a></li>
+                                                              <li><a href="#">L4-2</a></li>
+                                                              <li><a href="#">L4-3</a></li>
+                                                              <li><a href="#">L4-4</a></li>
+                                                              <li><a href="#">L4-5</a></li>
+                                                              <li><a href="#">L4-6</a></li>
+                                                          </ul>
+                                                  </li>
+                                                  <li><a href="#">Network Cabinets</a></li>
+                                                  <li><a href="#">Preconfigured Cabinets</a></li>
+                                                  <li><a href="#">Server Cabinets</a></li>
+                                                  <li><a href="#">Net-Verse Cabinets</a></li>
+                                                  <li><a href="#">Net-Verse Cabinets Accessories</a></li>
+                                              </ul>
+                                      </li>
+                                      <li><a href="#">Cable management</a></li>
+                                      <li><a href="#">Industrial Automation Enclosures</a></li>
+                                      <li><a href="#">Racks & Accessories</a></li>
+                                      <li><a href="#">Thermal management & Containment</a></li>
+                                      <li><a href="#">Zone Enclosures</a></li>
+                                  </ul>
+                              </li>
+                              <li><a href="#">Cable & Bundle Wiring</a></li>
+                              <li><a href="#">Cable Routing & Pathways</a></li>
+                              <li><a href="#">Copper Systems</a></li>
+                              <li><a href="#">Fiber Systems</a></li>
+                              <li><a href="#">Grounding Products</a></li>
+                              <li><a href="#">Identification</a></li>
+                              <li><a href="#">Power Distribution and Environmental Monitoring</a></li>
+                              <li><a href="#">Safety and Security</a></li>
+                              <li><a href="#">Software and Hardware</a></li>
+                              <li><a href="#">Tools</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="uppercase">support</span> <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">One more separated link</a></li>
-                            </ul>
+                        <li><a href="#">Support</a></li>
+                      </ul>
+                      <ul class="nav panduit-hamburger-footer-nav">
+                        <li>
+                          <div class="pdt-more-info-soc">
+                              <ul class="list-inline">
+                                  <li><a href="#"><i class="icon-pdt-soc-fb"></i></a></li>
+                                  <li><a href="#"><i class="icon-pdt-soc-google"></i></a></li>
+                                  <li><a href="#"><i class="icon-pdt-soc-twitter"></i></a></li>
+                                  <li>
+                                      <a href="#">
+                                          <span class="icon-pdt-soc-linkedin">
+                                              <span class="path1"></span><span class="path2"></span>
+                                          </span>
+                                      </a>
+                                  </li>
+                                  <li><a href="#"><i class="icon-pdt-soc-youtube"></i></a></li>
+                                  <li>
+                                      <a href="#">
+                                          <span class="icon-pdt-soc-weibo">
+                                              <span class="path1"></span><span class="path2"></span>
+                                          </span>
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
                         </li>
-                    </ul>
+                        <li class="pdt-footer-link"><a href="#">Careers at Panduit</a></li>
+                        <li class="pdt-footer-link"><a href="#">Media Center</a></li>
+                        <li class="pdt-footer-link"><a href="#">Become a Panduit Partner</a></li>
+                        <li class="pdt-footer-link"><a href="#">Product Registration</a></li>
+                        <li class="pdt-footer-link"><a href="#">Panduit connection Blog</a></li>
+                      </ul>
+                    </div>
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
@@ -206,12 +299,13 @@
         <!-- end featured products -->
         <!-- begin value -->
         <div class="pdt-value col-sm-12 col-md-12 col-lg-12">
-            <div class="pdt-value-img-wrapper">
+            <!-- <div class="pdt-value-img-wrapper">
                 <picture>
                       <source media="(max-width: 767px)" srcset="images/bg-fiberconnect-mobile.png">
                       <img src="images/bg-fiberconnect.png" alt="image">
                 </picture> 
-            </div>
+            </div>  -->
+            <img src="images/pdt-fp-quickbuildharnessboards.png"/>
             <p class="pdt-value-title">Trusted Infrastructure = Trusted Data</p>
             <div class="pdt-value-content">
                 <div class="row">
