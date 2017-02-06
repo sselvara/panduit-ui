@@ -3,15 +3,21 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Panduit | Electrical and Network Cables, Connectivity, Wire Management</title>
     <!-- Bootstrap -->
     <link href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-icons.css" rel="stylesheet">
     <link href="css/panduit.css" rel="stylesheet">
+    <link href="css/font-icons.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
     <link href="css/checkbox.css" rel="stylesheet">
+    <style type="text/css">
+        .pdt-hero.pdt-slanted-img .svg-clipped{
+            clip-path: url(#clip-slant);
+            -webkit-clip-path:url(#clip-slant);
+        }
+    </style>
     <script src="https://use.typekit.net/jor4daw.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     
@@ -42,8 +48,8 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#">Find Partner/Distributor</a></li>
-                        <li><a href="#"><img src="images/pdt-contact-phone.svg"/>Contact Us</a></li>
-                        <li><a href="#"><img src="images/pdt-myaccount.svg"/> My Account</a></li>
+                        <li><a href="#"><i class="icon-pdt-contact-phone"></i>Contact Us</a></li>
+                        <li><a href="#"><i class="icon-pdt-myaccount"></i> My Account</a></li>
                     </ul>
                     <form class="navbar-form navbar-left">
                         <div class="form-group">
@@ -94,67 +100,70 @@
             <!-- /.container-fluid -->
         </nav>
         <!-- end top gloabl nav -->
-        <!-- begin hero section -->
-        <div class="pdt-hero pdt-slanted-img clip-svg-inline">
-            <div class="container-fluid">
-                <div class="pdt-hero-cta  pdt-align-left">
-                    <a href="#">
-                       <!-- <div class="pdt-upperline-lrg-lt"></div>-->
-                        <h1 class="pdt-title-lrg-lt">Infrastructure for a Connected World</h1>
-                        <p class="pdt-cta-lt"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span> Learn More</p>
-                    </a>
-                </div>
+
+        <!-- end of slanting clip helper svg -->
+        <svg width="0" height="0">
+          <defs>
+            <clipPath id="clip-slant" clipPathUnits="objectBoundingBox">
+                <polygon fill="#FFFFFF" stroke="#000000" stroke-width="1.5794" points="0 0.85, 0 0, 1 0, 1 1"></polygon>
+            </clipPath>
+          </defs>
+        </svg>
+        <!-- slanting clip helper svg -->
+        <!-- begin banner section -->
+        <div class="pdt-hero large pdt-slanted-img col-sm-12 col-md-12 clearfix">
+            <div class="hero-img-wrapper">
+                <picture>
+                      <source media="(max-width: 767px)" srcset="images/pdt-hero-mobile.png">
+                      <img class="svg-clipped" src="images/pdt-hero.png" alt="image">
+                </picture>
+            </div>
+            <div class="col-sm-7 col-md-7  col-lg-7 pdt-hero-content">
+                <a href="#">
+                   <!-- <div class="pdt-upperline-lrg-lt"></div>-->
+                    <h1 class="pdt-title light">Infrastructure for a Connected World</h1>
+                    <h4 class="pdt-cta light"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span> Learn More</h4>
+                </a>
             </div>
         </div>
-<!-- SVG code needs to be included to make slant work -->
-        <svg class="clip-svg">
-            <defs>
-                <clipPath id="clip-polygon" clipPathUnits="objectBoundingBox" >
-                    <polygon points="0 0.85, 0 0, 1 0, 1 1" />
-                </clipPath>
-            </defs>
-        </svg>  
-        <!-- end hero section -->
-        <!-- begin second section -->
-        <div class="pdt-sub-hero under-hero pdt-nextgencableties">
-            <div class="container-fluid">
-                <div class="pdt-cta-right pdt-align-right">
-                    <a href="#">
-                        <!--<div class="pdt-upperline-blue"></div>-->
-                        <h2 class="pdt-title-blue">Next Generation Cable Tie Systems</h2>
-                        <p class="pdt-text">25% faster than comparable tools with next generation features and functionality</p>
-                        <p class="pdt-cta-blue"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span> Learn More</p>
-                    </a>
-                </div>
-                <div class="clearfix"></div>
+        <!-- end banner section -->
+        <!-- begin banner section -->
+        <div class="pdt-hero medium col-sm-12 col-md-12 clearfix">
+            <div class="hero-img-wrapper">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="images/bg-nextgencabletie-mobile.jpg">
+                  <img src="images/bg-nextgencabletie.jpg" alt="image">
+                </picture>     
+            </div>          
+            <div class="col-sm-6 col-md-6 col-lg-6 pdt-hero-content pull-right">
+                <a href="#">
+                    <h2 class="pdt-title dark">Next Generation Cable Tie Systems</h2>
+                    <h6 class="pdt-text dark">25% faster than comparable tools with next generation features and functionality</h6>
+                    <h4 class="pdt-cta dark"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span> Learn More</h4>
+                </a>
             </div>
         </div>
-        <!-- end second section -->
-        <!-- begin third section -->
-        <div class="pdt-sub-hero pdt-sub-hero-slant pdt-fiberconnect">
-            <div class="container-fluid">
-                <div class="pdt-cta-left pdt-align-left">
-                    <a href="#">
-                       <!-- <div class="pdt-upperline-lt"></div>-->
-                        <h2 class="pdt-title-lt">Mission Critical Fiber Connectivity</h2>
-                        <p class="pdt-text-lt">Comprehensive Fiber Optic Systems delivering High Performance, Reliability and Scalability</p>
-                        <p class="pdt-cta-lt"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span> Learn More</p>
-                    </a>
-                </div>
+        <!-- end banner section -->
+        <!-- begin banner section -->
+        <div class="pdt-hero medium pdt-slanted-img col-sm-12 col-md-12 clearfix">
+            <div class="hero-img-wrapper">
+                <picture>
+                      <source media="(max-width: 767px)" srcset="images/bg-fiberconnect-mobile.png">
+                      <img src="images/bg-fiberconnect.png" alt="image">
+                </picture> 
+            </div>               
+            <div class="col-sm-6 col-md-6 col-lg-6 pdt-hero-content">
+                <a href="#">
+                    <h2 class="pdt-title light">Mission Critical Fiber Connectivity</h2>
+                    <h6 class="pdt-text light">Comprehensive Fiber Optic Systems delivering High Performance, Reliability and Scalability</h6>
+                    <h4 class="pdt-cta light"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span> Learn More</h4>
+                </a>
             </div>
         </div>
- <!-- SVG code needs to be included to make slant work -->
-        <svg class="clip-svg">
-            <defs>
-                <clipPath id="clip-polygon" clipPathUnits="objectBoundingBox" >
-                    <polygon points="0 0.85, 0 0, 1 0, 1 1" />
-                </clipPath>
-            </defs>
-        </svg>  
-        <!-- end third section -->
+        <!-- end banner section -->
+        
         <!-- begin featured products -->
-         <div class="featured-products">
-            <div class="container-fluid">
+         <div class="featured-products col-sm-12 col-md-12 col-lg-12">
                 <div class="row">
                     <!-- featured product 1 -->
                     <div class="col-md-4">
@@ -162,9 +171,9 @@
                             <a href="#">
                                 <img src="images/pdt-fp-quickbuildharnessboards.png"/>
                                 <!--<div class="pdt-upperline-blue"></div>-->
-                                <h3 class="pdt-title-sm-blue">Quick Build Harness Boards</h3>
-                                <p class="pdt-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-                                <p class="pdt-cta-blue"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span> Learn More</p>
+                                <h3 class="pdt-title dark">Quick Build Harness Boards</h3>
+                                <h6 class="pdt-text dark">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</h6>
+                                <h4 class="pdt-cta dark"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span> Learn More</h4>
                             </a>
                         </div>
                     </div>
@@ -174,9 +183,9 @@
                             <a href="#">
                                 <img src="images/pdt-fp-pimconnectivitymodule.png"/>
                                <!-- <div class="pdt-upperline-blue"></div>-->
-                                <h3 class="pdt-title-sm-blue">Pim Connectivity Module</h3>
-                                <p class="pdt-text">Maecenas dapibus sem metus, a condimentum dui pulvinar vitae</p>
-                                <p class="pdt-cta-blue"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span> Learn More</p>
+                                <h3 class="pdt-title dark">Pim Connectivity Module</h3>
+                                <h6 class="pdt-text dark">Maecenas dapibus sem metus, a condimentum dui pulvinar vitae</h6>
+                                <h4 class="pdt-cta dark"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span> Learn More</h4>
                             </a>
                         </div>
                     </div>
@@ -186,42 +195,45 @@
                             <a href="#">
                                 <img src="images/pdt-fp-cableties.png"/>
                                 <!--<div class="pdt-upperline-blue"></div>-->
-                                <h3 class="pdt-title-sm-blue">Cable Ties</h3>
-                                <p class="pdt-text">Autem vel eum iure reprehenderit qui in ea voluptate</p>
-                                <p class="pdt-cta-blue"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span> Learn More</p>
+                                <h3 class="pdt-title dark">Cable Ties</h3>
+                                <h6 class="pdt-text dark">Autem vel eum iure reprehenderit qui in ea voluptate</h6>
+                                <h4 class="pdt-cta dark"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span> Learn More</h4>
                             </a>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
         <!-- end featured products -->
         <!-- begin value -->
-        <div class="pdt-value">
-            <div class="container fluid">
-                <p class="pdt-value-title">Trusted Infrastructure = Trusted Data</p>
-                <div class="pdt-value-content">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <p class="pdt-value-sub-title">32%<p/>
-                            <p class="pdt-value-text">Sed quia non numquam eius modi tempora incidunt</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p class="pdt-value-sub-title">2/3</p>
-                            <p class="pdt-value-text">Autem vel eum iure reprehe nderit qui in ea voluptate</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p class="pdt-value-sub-title">76%</p>
-                            <p class="pdt-value-text">Nam sit amet tellus non felis dapibus molestie lorem</p>
-                        </div>
+        <div class="pdt-value col-sm-12 col-md-12 col-lg-12">
+            <div class="pdt-value-img-wrapper">
+                <picture>
+                      <source media="(max-width: 767px)" srcset="images/bg-fiberconnect-mobile.png">
+                      <img src="images/bg-fiberconnect.png" alt="image">
+                </picture> 
+            </div>
+            <p class="pdt-value-title">Trusted Infrastructure = Trusted Data</p>
+            <div class="pdt-value-content">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="pdt-value-sub-title">32%<p/>
+                        <p class="pdt-value-text">Sed quia non numquam eius modi tempora incidunt</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="pdt-value-sub-title">2/3</p>
+                        <p class="pdt-value-text">Autem vel eum iure reprehe nderit qui in ea voluptate</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="pdt-value-sub-title">76%</p>
+                        <p class="pdt-value-text">Nam sit amet tellus non felis dapibus molestie lorem</p>
                     </div>
                 </div>
-                <a href="#"><p class="pdt-cta-lt"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span> Learn More</p></a>
             </div>
+            <a href="#"><p class="pdt-cta-lt"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span> Learn More</p></a>
         </div>
         <!-- end value -->
         <!-- begin global footer -->
-        <div class="pdt-global-footer">
+        <div class="pdt-global-footer col-sm-12 col-md-12 col-lg-12">
             <div class="pdt-contact">
                 <div class="container-fluid">
                     <div class="row">

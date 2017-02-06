@@ -21,20 +21,22 @@ a:hover {
 ul {
     margin:0;
 }
+
+img, picture {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 body {
     color:#56575A;
     font-family: Arial, sans-serif;
     background-color:#efefef;
+    overflow-x: hidden;
 }
 .pdt-wrapper {
     max-width:1280px;
     margin:0 auto;
-}
-.pdt-align-left {
-       margin: 100px 0 0 150px;
-}
-.pdt-align-right{
-   margin:110px 180px 0 0;
 }
 /*** Typography styles ******/
 h1, h2, h3, h4, h5{
@@ -54,65 +56,53 @@ h1{
     font-size: 60px;
     line-height: 68px;
 }
-h1::before {
+h1::before, h2::before, h3::before{
    content: "";
-  position: absolute;
-  height: 5px;
-  border-top: 9px solid;
-  top:-20px;
-  width: 200px;
-  border-radius:2px;
-  transition: all .7s ease;
+   position: absolute;
+   height: 8px;
+   background: #fff;
+   top:-20px;
+   left: 2px;
+   border-radius: 0;
+   transition: all .7s ease;
+}
+
+h1:before{    
+   width: 200px;
 }
 
 h1:hover:before {
- width:250px;
+    width:250px;
 }
 
 h2{
     font-size: 46px;
     line-height: 52px;
 }
-h2::before {
-   content: "";
-  position: absolute;
-  height: 5px;
-  border-top: 9px solid ;
-  width: 100px;
-  border-radius:2px;
-  transition: all .7s ease;
-  top:-20px;
-}
 
-h2:hover:before {
- width:125px;
-}
 h3{
     font-size: 26px;
     line-height: 32px;
 }
-h3::before {
-   content: "";
-  position: absolute;
-  height: 5px;
-  border-top: 9px solid ;
+
+h2::before, h3::before {
   width: 100px;
-  border-radius:2px;
-  transition: all .7s ease;
-  top:-20px;
 }
 
-h3:hover:before {
+h2:hover:before, h3:hover:before{
  width:125px;
 }
+
 h4{
     font-size: 22px;
     line-height: 28px;
 }
+
 h5{
     font-size: 16px;
     line-height: 22px;
 }
+
 h6{
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -183,10 +173,11 @@ h6{
 .navbar-right>li>a {
     padding-top:13px;
 }
-.navbar-right img {
-    height:18px;
-    width:18px;
-    margin-right:5px;
+.navbar-right i {
+    font-size: 18px;
+    position: relative;
+    top: 2px;
+    right: 5px;
 }
 .nav .caret {
     border-width:6px;
@@ -195,119 +186,102 @@ h6{
 
 /** HOMEPAGE **/
 
+
+svg:not(:root){
+    position: absolute;
+}
+
 /*** hero ***/
 .pdt-hero {
-    height:550px;
     width:100%;
-    background:url(../images/pdt-hero.png) 0 0 no-repeat;
-    background-size:contain;
-    z-index:10;
-    position:relative;
+    z-index: 10; 
+    position: relative;
+    overflow: hidden;
 }
-.pdt-hero-cta {
-    /**margin:100px 0 0 150px*/;
-    width:550px;
+
+.pdt-hero.large{
+    padding: 100px 170px 245px;
+}
+
+.pdt-hero.medium{
+    padding: 110px 172px 140px;
+}
+
+.pdt-hero .hero-img-wrapper{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.pdt-hero-content {
     font-family: "museo-sans";
+    padding: 0;
 }
-.pdt-upperline-lrg-lt {
-    background-color:#fff;
-    height:8px;
-    width:200px;
+
+/** begin title and text style **/
+.pdt-title.light, .pdt-text.light{
+    color: #fff;
 }
-/** end hero **/
-/** sub hero **/
-.pdt-sub-hero {
-    height:510px;
-    width:100%;
+.pdt-title.light:before{
+    background: #fff;
 }
-.pdt-sub-hero-slant {
-    position:relative;
-    z-index:10;
+
+.pdt-title.dark{
+    color: #0077aa;
 }
-.under-hero, .under-slant {
-    position:relative;
+
+.pdt-text.dark{
+    color: #000000;
+}
+
+.pdt-title.dark::before{
+    background: #0077aa;
+}
+
+/** end title and text style **/
+
+/** slanding bottom styles **/
+
+.pdt-hero.pdt-slanted-img .svg-clipped{
+    clip-path: url(#clip-slant);
+    -webkit-clip-path:url(#clip-slant);
+}
+
+.pdt-hero.pdt-slanted-img + div {
+    margin-top: -115px;
+    position: relative;
     z-index: 1;
-    margin-top:-80px;
 }
-.pdt-upperline-blue {
-    background-color:#0077AA;
-    height:8px;
-    width:100px;
-}
-.pdt-upperline-lt {
-    background-color:#fff;
-    height:8px;
-    width:100px;
-}
-.pdt-title-lrg-lt {
-    color:#fff;
-    margin:10px 0 0 0;
-    padding:0;
-}
-.pdt-title-lt, .pdt-title-blue {
-    margin:10px 0 0 0;
-    padding: 0;
-}
-.pdt-title-sm-blue {
-    margin:10px 0 0 0;
-    padding: 0;
-}
-.pdt-title-lt, .pdt-cta-lt, .pdt-text-lt {
-   color:#fff;
-}
-.pdt-title-blue, .pdt-cta-blue, .pdt-title-sm-blue {
-    color:#0077aa;
-}
-.pdt-text, .pdt-text-lt {
-    margin:10px 0 0 0;
-    padding:0;
-}
-.pdt-text {
-    color:#56575A;
-}
-.pdt-cta-lt, .pdt-cta-blue {
-    font-size:22px;
-    line-height: 27px;
-    font-weight: 700;
+
+/** end hero **/
+
+/** begin CTA styles **/
+.pdt-cta{
     text-transform: uppercase;
-    margin:30px 0 0 0;
-    padding:0;
-    font-family: "museo-sans";
+    margin-top: 40px;
 }
-.pdt-cta-lt span.glyphicon {
-    font-size: 16px;
+
+.pdt-cta.light{
+    color: #fff;
 }
-.pdt-hero-cta:hover .pdt-upperline-lrg-lt {
-    width:250px;
-    transition: all .2s ease-out
+
+.pdt-cta.dark{
+    color: #0077aa;
 }
-.pdt-cta-right:hover .pdt-upperline-blue, .pdt-cta-right:hover .pdt-upperline-lt, .pdt-fp:hover .pdt-upperline-blue, .pdt-cta-left:hover .pdt-upperline-blue, .pdt-cta-left:hover .pdt-upperline-lt {
-    width:125px;
-    transition: all .2s ease-out
-}
-.pdt-cta-right {
-    float:right;
-    width:390px;
-    margin:130px 230px 0 0;
-}
-.pdt-cta-left {
-    width:390px;
-   /** margin:100px 0 0 150px;**/
-}
-.pdt-nextgencableties {
-    background:url(../images/bg-nextgencabletie.jpg) 0 0 no-repeat;
-    background-size: contain;
-}
-.pdt-fiberconnect {
-    background:url(../images/bg-fiberconnect.png) 0 0 no-repeat;
-    background-size: contain;
-}
-/** end sub hero **/
+
+/** end CTA style **/
+
+
 /** featured products **/
 .featured-products {
-    background-color:#fff;
-    padding:130px 150px 100px;
+    position: relative;
+    width:100%;
+    z-index: -2!important;
+    padding: 180px 150px 100px;
+    overflow: hidden;
+    background: #fff;
 }
+
 .pdt-fp {
     width:270px;
     margin:0 auto;
@@ -317,7 +291,7 @@ h6{
     width:100%;
     border:1px solid #D3D3D3;
 }
-.pdt-fp .pdt-title-sm-blue {
+.pdt-fp .pdt-title {
     min-height:80px;
 }
 /** end featured products **/
@@ -353,6 +327,11 @@ h6{
 }
 /** end value **/
 /** global footer **/
+
+.pdt-global-footer{
+    padding: 0;
+}
+
 .pdt-contact {
     background-color:#0093B4;
     color:#fff;
@@ -823,20 +802,7 @@ ul.pdt-pdp-features {
         float:none;
     }
     /** hero **/
-    .pdt-hero {
-        height:440px;
-    }
-    .pdt-hero-cta {
-        margin:100px 0 0 60px;
-        width:390px;
-    }
-    .pdt-upperline-lrg-lt {
-        width:130px;
-        height:5px;
-    }
-    .pdt-hero-cta:hover .pdt-upperline-lrg-lt {
-        width:166px;
-    }
+
 
     /** end hero **/
     .pdt-cta-lt, .pdt-cta-blue {
@@ -847,24 +813,15 @@ ul.pdt-pdp-features {
     .pdt-cta-lt span.glyphicon, .pdt-cta-blue span.glyphicon {
         font-size: 14px;
     }
-    /** sub hero **/
-    .pdt-sub-hero {
-        height:408px;
+
+    .pdt-hero.medium {
+        padding: 90px 172px 140px;
     }
-    .under-hero, .under-slant {
-        margin-top:-66px;
+
+    .pdt-hero.pdt-slanted-img + div{
+        margin-top: -116px;
     }
-    .pdt-nextgencableties {
-        margin-bottom:0px;
-    }
-    .pdt-cta-right {
-       /** margin:110px 180px 0 0;**/
-        width:280px;
-    }
-    .pdt-cta-left {
-        width:280px;
-        margin:65px 0 0 60px;
-    }
+
     .pdt-upperline-blue {
         width:70px;
         height:5px;
@@ -1043,18 +1000,20 @@ ul.pdt-pdp-features {
         position:relative;
         top:-1px;
     }
-    .pdt-hero {
-        background-size: cover;
-        background-image: url(../images/ptd-hero-mobile.png);
+
+    .pdt-hero .hero-img-wrapper img, .pdt-hero .hero-img-wrapper picture{
+        height: 330px;
+        width: auto;
     }
-    .pdt-hero-cta {
+
+    .pdt-hero-content {
         width:240px;
         margin: 40px 0 0 9px;
     }
     .pdt-upperline-lrg-lt {
         width:110px;
     }
-    .pdt-hero-cta:hover .pdt-upperline-lrg-lt {
+    .pdt-hero-con:hover .pdt-upperline-lrg-lt {
         width:128px;
     }
     .pdt-title-lrg-lt {
@@ -1062,9 +1021,7 @@ ul.pdt-pdp-features {
         font-size: 30px;
         line-height: 36px;
     }
-    .under-hero, .under-slant {
-        margin-top: -25px;
-    }
+
     .pdt-cta-right {
         margin:50px 0 0 0;
         width:170px;
@@ -1078,17 +1035,7 @@ ul.pdt-pdp-features {
         font-size: 12px;
         line-height: 16px;
     }
-    .pdt-sub-hero {
-        height:260px;
-    }
-    .pdt-nextgencableties {
-        background-size: cover;
-        background-image: url(../images/bg-nextgencabletie-mobile.jpg);
-    }
-    .pdt-fiberconnect {
-        background-size: cover;
-        background-image: url(../images/bg-fiberconnect-mobile.png);
-    }
+    
     .featured-products-mobile {
         display: block;
         padding:60px 15px 30px;
