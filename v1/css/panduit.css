@@ -376,15 +376,8 @@ svg:not(:root){
     color:#fff;
     padding: 50px 150px;
 }
-.pdt-more-info-about, .pdt-more-info-secondary, .pdt-more-info-catalog {
-    float:left;
-}
-.pdt-more-info-catalog {
-    width:380px;
-}
-.pdt-more-info-secondary, .pdt-more-info-catalog {
-    margin-left:80px;
-}
+
+
 .pdt-more-info-secondary li.pdt-footer-link {
     padding-bottom: 15px;
 }
@@ -395,6 +388,7 @@ svg:not(:root){
     font-size:80px;
     color: #0093B4;
     float:left;
+    margin-right:12px;
 }
 .pdt-catalog-title-content {
     float:left;
@@ -882,7 +876,8 @@ ul.pdt-pdp-features {
         margin-left:0;
     }
     .pdt-more-info-catalog {
-        float: right;
+       /** float: right;*//
+       
     }
     .pdt-legal {
         padding:10px 70px;
@@ -1091,7 +1086,8 @@ ul.pdt-pdp-features {
         padding-bottom:0;
     }
     .pdt-more-info {
-        padding:40px 0;
+       padding-left: 34px;
+    padding-right: 26px;
     }
     .pdt-more-info-catalog {
         float:none;
