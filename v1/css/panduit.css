@@ -400,15 +400,8 @@ svg:not(:root){
     color:#fff;
     padding: 50px 150px;
 }
-.pdt-more-info-about, .pdt-more-info-secondary, .pdt-more-info-catalog {
-    float:left;
-}
-.pdt-more-info-catalog {
-    width:380px;
-}
-.pdt-more-info-secondary, .pdt-more-info-catalog {
-    margin-left:80px;
-}
+
+
 .pdt-more-info-secondary li.pdt-footer-link {
     padding-bottom: 15px;
 }
@@ -419,6 +412,7 @@ svg:not(:root){
     font-size:80px;
     color: #0093B4;
     float:left;
+    margin-right:12px;
 }
 .pdt-catalog-title-content {
     float:left;
@@ -465,16 +459,16 @@ svg:not(:root){
 .pdt-more-info-catalog .btn:hover, .pdt-more-info-catalog .btn:focus {
     color:#fff;
 }
-.pdt-catalog-btn-wrapper a {
-    float:left;
-    margin:14px 0 0 0;
+.pdt-catalog-btn-wrapper h4 {
+   display:inline-block;
+}
+.pdt-catalog-btn-wrapper h4:nth-child(2) {
+  margin-left:81px;
 }
 .pdt-catalog-btn-wrapper a:hover {
     color:#fff;
 }
-.pdt-catalog-btn-wrapper a:nth-child(2) {
-    margin-left:30px;
-}
+
 .pdt-catalog-outside-usa {
     margin-top:40px;
     color:#fff;
@@ -911,7 +905,8 @@ ul.pdt-pdp-features {
         margin-left:0;
     }
     .pdt-more-info-catalog {
-        float: right;
+       /** float: right;*//
+
     }
     .pdt-legal {
         padding:10px 70px;
@@ -1119,7 +1114,8 @@ ul.pdt-pdp-features {
         padding-bottom:0;
     }
     .pdt-more-info {
-        padding:40px 0;
+       padding-left: 34px;
+    padding-right: 26px;
     }
     .pdt-more-info-catalog {
         float:none;
@@ -1128,6 +1124,9 @@ ul.pdt-pdp-features {
     .pdt-catalog-title-wrapper img {
         width:67px;
     }
+    .pdt-catalog-btn-wrapper h4:nth-child(2) {
+      margin-left:71px;
+}
     .pdt-catalog-title {
         font-size: 16px;
         line-height: 19px;
