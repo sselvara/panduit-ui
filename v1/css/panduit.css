@@ -435,8 +435,11 @@ svg:not(:root){
 .pdt-more-info-catalog .btn:hover, .pdt-more-info-catalog .btn:focus {
     color:#fff;
 }
-.pdt-catalog-btn-wrapper a {
-    float:left;
+.pdt-catalog-btn-wrapper h4 {
+   display:inline-block;
+}
+.pdt-catalog-btn-wrapper h4:nth-child(2) {
+  margin-left:81px;
 }
 .pdt-catalog-btn-wrapper a:hover {
     color:#fff;
@@ -1093,6 +1096,9 @@ ul.pdt-pdp-features {
     .pdt-catalog-title-wrapper img {
         width:67px;
     }
+    .pdt-catalog-btn-wrapper h4:nth-child(2) {
+      margin-left:71px;
+}
     .pdt-catalog-title {
         font-size: 16px;
         line-height: 19px;
