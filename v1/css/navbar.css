@@ -70,6 +70,13 @@
   position: relative;
 }
 
+.panduit-eyebrow-nav a img {
+  height: 18px;
+  width: 18px;
+  margin-right: 5px;
+  display: inline;
+}
+
 @media all and (max-width: 768px) {
   .header-container {
     width: 100%;
