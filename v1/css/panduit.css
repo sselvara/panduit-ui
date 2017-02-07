@@ -437,14 +437,11 @@ svg:not(:root){
 }
 .pdt-catalog-btn-wrapper a {
     float:left;
-    margin:14px 0 0 0;
 }
 .pdt-catalog-btn-wrapper a:hover {
     color:#fff;
 }
-.pdt-catalog-btn-wrapper a:nth-child(2) {
-    margin-left:30px;
-}
+
 .pdt-catalog-outside-usa {
     margin-top:40px;
     color:#fff;
@@ -877,7 +874,7 @@ ul.pdt-pdp-features {
     }
     .pdt-more-info-catalog {
        /** float: right;*//
-       
+
     }
     .pdt-legal {
         padding:10px 70px;
