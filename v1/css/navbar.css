@@ -70,6 +70,18 @@
   position: relative;
 }
 
+.panduit-eyebrow-nav a img {
+  height: 18px;
+  width: 18px;
+  margin-right: 5px;
+  display: inline;
+}
+
+.navbar-right>li.panduit-find-partner>a {
+  padding: 13px 0;
+  display: inline-block;
+}
+
 @media all and (max-width: 768px) {
   .header-container {
     width: 100%;
