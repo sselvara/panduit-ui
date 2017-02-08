@@ -200,11 +200,13 @@ svg:not(:root){
 }
 
 .pdt-hero.large{
-    padding: 100px 170px 245px;
+    padding: 100px 170px;
+    min-height: 550px;
 }
 
 .pdt-hero.medium{
-    padding: 110px 172px 140px;
+    padding: 90px 172px;
+    min-height: 510px;
 }
 
 .pdt-hero .hero-img-wrapper{
@@ -218,6 +220,14 @@ svg:not(:root){
 .pdt-hero-content {
     font-family: "museo-sans";
     padding: 0;
+}
+
+.pdt-hero.content-right.large{
+   padding: 125px 180px 0;
+}
+
+.pdt-hero.content-right.medium{
+   padding: 130px 255px 0;
 }
 
 .pdt-hero.content-right .pdt-hero-content{
@@ -323,6 +333,7 @@ svg:not(:root){
 .pdt-value {
     padding: 80px 240px;
     color:#fff;
+    position: relative;
 }
 
 .pdt-value-img-wrapper{
