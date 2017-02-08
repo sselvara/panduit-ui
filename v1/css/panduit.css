@@ -322,9 +322,20 @@ svg:not(:root){
     position: relative;
     width:100%;
     z-index: -2!important;
-    padding: 180px 150px 100px;
+    padding: 180px 0 100px;
     overflow: hidden;
     background: #fff;
+}
+
+.featured-products-container {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.featured-products-container .featured-product{
+    max-width: 270px;
 }
 
 .pdt-fp {
@@ -345,7 +356,7 @@ svg:not(:root){
 /** end featured products **/
 /** value **/
 .pdt-value {
-    padding: 80px 240px;
+    padding: 80px 0px;
     color:#fff;
     position: relative;
 }
@@ -358,8 +369,16 @@ svg:not(:root){
     top: 0;
 }
 
-.pdt-value-content {
+.pdt-value-content-wrapper {
     margin:0 auto;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pdt-value-content-wrapper .pdt-value-content{
+    max-width: 250px;
 }
 .pdt-value-title {
     color:#fff;
