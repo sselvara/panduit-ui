@@ -200,22 +200,38 @@ svg:not(:root){
 }
 
 .pdt-hero.large{
-    padding: 100px 170px 245px;
+    padding: 100px 170px;
+    min-height: 550px;
 }
 
 .pdt-hero.medium{
-    padding: 110px 172px 140px;
+    padding: 90px 172px;
+    min-height: 510px;
 }
 
 .pdt-hero .hero-img-wrapper{
     position: absolute;
     left: 0;
     top: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .pdt-hero-content {
     font-family: "museo-sans";
     padding: 0;
+}
+
+.pdt-hero.content-right.large{
+   padding: 125px 180px 0;
+}
+
+.pdt-hero.content-right.medium{
+   padding: 130px 255px 0;
+}
+
+.pdt-hero.content-right .pdt-hero-content{
+    float: right;
 }
 
 /** begin title and text style **/
@@ -244,7 +260,7 @@ svg:not(:root){
 
 /** slanding bottom styles **/
 
-.pdt-hero.pdt-slanted-img .svg-clipped{
+.pdt-hero.pdt-slanted-img img{
     clip-path: url(#clip-slant);
     -webkit-clip-path:url(#clip-slant);
 }
@@ -252,9 +268,27 @@ svg:not(:root){
 .pdt-hero.pdt-slanted-img + div {
     margin-top: -115px;
     position: relative;
-    z-index: 1;
 }
 
+.pdt-hero.pdt-slanted-img +div:nth-of-type(2){
+    z-index: 5;
+}
+
+.pdt-hero.pdt-slanted-img +div:nth-of-type(3){
+    z-index: 4;
+}
+
+.pdt-hero.pdt-slanted-img +div:nth-of-type(4){
+    z-index: 3;
+}
+
+.pdt-hero.pdt-slanted-img +div:nth-of-type(5){
+    z-index: 2;
+}
+
+.pdt-hero.pdt-slanted-img +div:nth-of-type(6){
+    z-index: 1;
+}
 /** end hero **/
 
 /** begin CTA styles **/
@@ -301,6 +335,7 @@ svg:not(:root){
 .pdt-value {
     padding: 80px 240px;
     color:#fff;
+    position: relative;
 }
 
 .pdt-value-img-wrapper{
@@ -802,7 +837,16 @@ ul.pdt-pdp-features {
         margin: 0 auto;
         float:none;
     }
+
+    img, picture {
+        height: 100%;
+        display: block;
+    }
+    
     /** hero **/
+    .pdt-hero.large{
+        padding: 100px 150px 245px;
+    }
 
 
     /** end hero **/
@@ -816,7 +860,7 @@ ul.pdt-pdp-features {
     }
 
     .pdt-hero.medium {
-        padding: 90px 172px 140px;
+        padding: 90px 190px 110px 150px;
     }
 
     .pdt-hero.pdt-slanted-img + div{
@@ -850,19 +894,15 @@ ul.pdt-pdp-features {
         padding:120px 30px 50px;
     }
     .pdt-fp {
-        width:225px;
+        
     }
+
     .pdt-value {
-        padding-top: 40px;
-        height:350px;
-        background-size: cover;
+        
     }
     .pdt-value-title {
         font-size:28px;
         line-height: 33px;
-    }
-    .pdt-value-content {
-        width:600px;
     }
     .pdt-value-sub-title {
         font-size: 65px;
@@ -893,9 +933,26 @@ ul.pdt-pdp-features {
 }
 @media all and (max-width: 768px) {
 
-    .pdt-hero {
-        height:330px;
+    .pdt-hero.large, .pdt-hero.medium{
+        padding: 75px 25px;
     }
+
+    .pdt-hero.large {
+        padding-bottom: 120px;
+    }
+
+    .pdt-hero.medium {
+        padding-bottom: 90px;
+    }
+
+    .pdt-hero.pdt-slanted-img + div{
+        margin-top: -50px;
+    }
+
+    .pdt-cta{
+        margin-top: 20px;
+    }
+
     .under-hero, .under-slant {
         margin-top:-50px;
     }
@@ -932,7 +989,7 @@ ul.pdt-pdp-features {
         font-size: 14px;
     }
     .featured-products {
-        padding: 110px 15px 50px;
+        padding: 110px 30px 50px;
     }
     .pdt-fp {
         width:auto;
@@ -940,8 +997,19 @@ ul.pdt-pdp-features {
     .pdt-fp img {
         margin-bottom: 20px;
     }
+
+    .pdt-fp .pdt-title{
+        margin-top: 40px;
+        min-height: 48px;
+    }
+    
     .pdt-fp .pdt-text {
         min-height: 60px;
+        margin-bottom: 0px;
+    }
+
+    .pdt-value {
+        padding: 30px 70px 60px;
     }
     .pdt-contact {
         padding:45px 0;
@@ -991,7 +1059,6 @@ ul.pdt-pdp-features {
 
 @media all and (min-width: 320px) and (max-width:414px) {
 
-
     .mobile-only {
         display:block;
     }
@@ -1003,73 +1070,45 @@ ul.pdt-pdp-features {
         top:-1px;
     }
 
-    .pdt-hero .hero-img-wrapper img, .pdt-hero .hero-img-wrapper picture{
-        height: 330px;
-        width: auto;
+    .pdt-hero.large{
+        padding: 40px 0px 156px 15px;
     }
 
-    .pdt-hero-content {
-        width:240px;
-        margin: 40px 0 0 9px;
-    }
-    .pdt-upperline-lrg-lt {
-        width:110px;
-    }
-    .pdt-hero-con:hover .pdt-upperline-lrg-lt {
-        width:128px;
-    }
-    .pdt-title-lrg-lt {
-        margin:5px 0 0 0;
-        font-size: 30px;
-        line-height: 36px;
+    .pdt-hero.medium {
+        padding: 60px 0px 100px 15px;
     }
 
-    .pdt-cta-right {
-        margin:50px 0 0 0;
-        width:170px;
-    }
-    .pdt-cta-left {
-        margin:25px 0 0 9px;
-        width:170px;
+    .pdt-hero.pdt-slanted-img + div{
+        margin-top: -60px;
     }
 
-    .pdt-text, .pdt-text-lt {
-        font-size: 12px;
-        line-height: 16px;
+    .pdt-hero.content-right{
+        padding: 80px 15px 65px 0px;
+    }
+
+    .featured-products{
+        padding: 110px 0 50px;
+    }
+
+    .featured-products .pdt-fp{
+        padding: 20px 85px;
+    }
+
+    .featured-products .pdt-text {
+        min-height: 30px;
     }
     
-    .featured-products-mobile {
-        display: block;
-        padding:60px 15px 30px;
-        background-color:#fff;
+    .pdt-value{
+        padding: 35px 80px 55px;
     }
-    .pdt-fp .pdt-title-sm-blue, .pdt-fp .pdt-text {
-        height:auto;
+    .pdt-value .pdt-value-content h1{
+        margin-bottom: 0;
     }
-    .pdt-value {
-        height:auto;
-        padding:40px 0;
+    .pdt-value .pdt-value-content h6{
+        text-align: center;
+        margin-top: 0;
     }
-    .pdt-value-title {
-        font-size:24px;
-        line-height: 29px;
-    }
-    .pdt-value-content {
-        width:50%;
-    }
-    .col-md-4 {
-        width:auto;
-        float:none;
-    }
-    .pdt-value-sub-title {
-        font-size:50px;
-        line-height: 60px;
-    }
-    .pdt-value-text {
-        font-size: 12px;
-        line-height: 16px;
-        text-align:center;
-    }
+
     .pdt-contact {
         padding:30px;
     }
@@ -1115,11 +1154,11 @@ ul.pdt-pdp-features {
       }
 
     .pdt-more-info-soc ul li a i {
-    font-size: 35px;  
-}
-.pdt-more-info-soc ul li a span[class^='icon-pdt'], .pdt-more-info-soc ul li a i{
-       font-size: 35px;
-}
+        font-size: 35px;  
+    }
+    .pdt-more-info-soc ul li a span[class^='icon-pdt'], .pdt-more-info-soc ul li a i{
+           font-size: 35px;
+    }
     /****** PRODUCT DETAILS PAGE ******/
     .pdt-product-details, .pdt-product-sub-details {
         padding-bottom:30px;
