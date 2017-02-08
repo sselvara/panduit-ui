@@ -262,7 +262,9 @@ svg:not(:root){
 .pdt-title.dark::before{
     background: #0077aa;
 }
-
+.pdt-color-grey{
+    color: rgba(255,255,255,0.5);
+}
 /** end title and text style **/
 
 /** slanding bottom styles **/
@@ -1047,7 +1049,7 @@ ul.pdt-pdp-features {
         padding:45px 0;
     }
     .pdt-more-info {
-        padding: 60px 0;
+        padding: 60px 0 0 15px;
     }
     .pdt-legal {
         padding:10px 0;
@@ -1072,9 +1074,7 @@ ul.pdt-pdp-features {
         margin-bottom: 15px;
     }
 }
-.pdt-color-grey{
-    color: rgba(255,255,255,0.5);
-}
+
 @media all and (max-width:767px) {
     /*** Typography styles ***/
     h1{
@@ -1176,7 +1176,7 @@ ul.pdt-pdp-features {
         width:67px;
     }
     .pdt-catalog-btn-wrapper h4:nth-child(2) {
-      margin-left:71px;
+      margin-left:24px;
 }
     .pdt-catalog-title {
         font-size: 16px;

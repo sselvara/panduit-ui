@@ -1,0 +1,48 @@
+.upperHeader {
+	background-color:#EFEFEF;
+    border-top:1px solid #95989A;
+}
+.upperHeader h6 {
+	    padding: 20px 0 20px 150px;
+        color: rgba(84,85,89,0.5);
+}
+
+.pdt-header.large {
+    padding: 100px 170px 105px 109px;
+}
+.header-banner {
+	position:relative;
+    min-height: 240px;
+}
+.header-banner-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 50px 101px 105px 150px;
+}
+
+
+@media (max-width: 768px){
+	.header-banner-content {
+    padding: 30px 15px;;
+}
+.upperHeader h6 {
+        padding: 5px 0 5px 50px;
+}
+.header-banner {
+    min-height: 145px;
+}
+}
+
+@media (max-width: 414px) and (min-width: 320px)
+{
+.header-banner-content {
+    padding: 23px 0px 156px 12px;
+}
+.upperHeader h6 {
+       padding: 5px 0 5px 10px;;
+}
+.header-banner {
+    min-height: 149px;
+}
+}
