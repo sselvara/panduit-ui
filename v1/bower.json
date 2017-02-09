@@ -17,6 +17,10 @@
   "dependencies": {
     "bootstrap": "3.3.7",
     "repaintless": "^1.4.0",
-    "waypoints": "^4.0.1"
+    "waypoints": "^4.0.1",
+    "jquery": "https://github.com/jjenzz/jquery.ellipsis"
+  },
+  "resolutions": {
+    "jquery": "1.9.1 - 3"
   }
 }
