@@ -44,10 +44,6 @@ h1, h2, h3, h4, h5{
     position:relative;
 }
 
-h6{
-    font-weight: 100;
-}
-
 h1, h4, h5{
     font-weight: 700;
 }
@@ -116,11 +112,6 @@ h5{
 }
 
 h6{
-    font-size: 26px;
-    line-height: 32px;
-}
-
-p{
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -808,11 +799,6 @@ ul.pdt-pdp-features {
         line-height: 20px;
     }
     h6{
-        font-size: 20px;
-        line-height: 26px;
-    }
-
-    p{
         font-size: 14px;
         line-height: 18px;
     }
@@ -1120,10 +1106,6 @@ ul.pdt-pdp-features {
         line-height: 28px;
     }
     h6{
-        font-size: 16px;
-        line-height: 20px;
-    } 
-    p{
         font-size: 12px;
         line-height: 16px;
     }
@@ -1181,13 +1163,8 @@ ul.pdt-pdp-features {
     }
     
     .pdt-value{
-        padding: 35px 0 55px;
+        padding: 35px 80px 55px;
     }
-
-    .pdt-value-content-wrapper .pdt-value-content{
-        max-width: 100%;
-    }
-    
     .pdt-value .pdt-value-content h1{
         margin-bottom: 0;
     }
