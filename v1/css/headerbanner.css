@@ -12,7 +12,7 @@
 }
 .header-banner {
 	position:relative;
-    min-height: 240px;
+   /** min-height: 240px;**/
 }
 .header-banner-content {
     position: absolute;
@@ -30,7 +30,7 @@
         padding: 5px 0 5px 50px;
 }
 .header-banner {
-    min-height: 145px;
+   /** min-height: 145px;*//
 }
 }
 
@@ -43,6 +43,6 @@
        padding: 5px 0 5px 10px;;
 }
 .header-banner {
-    min-height: 149px;
+   /** min-height: 149px;**/
 }
 }
