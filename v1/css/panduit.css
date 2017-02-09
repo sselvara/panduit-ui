@@ -356,7 +356,7 @@ svg:not(:root){
 
 .pdt-fp .pdt-text{
     margin-bottom: 0;
-    min-height: 65px;
+    min-height: 80px;
 }
 /** end featured products **/
 /** value **/
@@ -373,11 +373,6 @@ svg:not(:root){
     left: 0;
     top: 0;
     overflow: hidden;
-}
-
-.pdt-value .pdt-value-img-wrapper img, .pdt-value .pdt-value-img-wrapper picture{
-    height: 100%;
-    width: auto;
 }
 
 .pdt-value-content-wrapper {
@@ -1110,6 +1105,11 @@ ul.pdt-pdp-features {
     h6{
         font-size: 12px;
         line-height: 16px;
+    }
+
+    .pdt-value .pdt-value-img-wrapper img, .pdt-value .pdt-value-img-wrapper picture{
+        height: 100%;
+        width: auto;
     }
 }
 
