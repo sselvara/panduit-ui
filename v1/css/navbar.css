@@ -30,11 +30,6 @@
 
 .dropdown-submenu:hover>.dropdown-menu {
     display: block;
-    background: transparent;
-}
-
-.dropdown-menu>li>a {
-  white-space: normal;
 }
 
 .dropdown-submenu>a:after {
@@ -86,58 +81,13 @@
   padding: 13px 0;
   display: inline-block;
 }
-ul.dropdown-menu.multi-level::before {
-    content: '';
-    background: #F6F6F6;
-    width: 1280px;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-}
 
-.dropdown-submenu>a:after, .dropdown-submenu>a i {
-  display: none;
-}
 @media all and (max-width: 768px) {
   .header-container {
     width: 100%;
   }
 
-  .panduit-navbar .navbar-collapse.collapse.in {
-    width: 90%;
-  }
-
-  .panduit-main-nav .dropdown-menu.active {
-    position: absolute;
-    width: 100%;
-    height: 419px;
-    overflow-x: hidden;
-    top: 100%;
-  }
-
-  .panduit-main-nav .dropdown-menu.multi-level.active, li.dropdown-submenu.active.show-menu {
-    position: absolute;
-    top: 0;
-    left: -100%;
-    right: 0%;
-    background: #fff;
-    width: 100%;
-    height: 100%;
-    transform: translate3d(100%, 0, 0);
-    transition: transform 0.35s;
-  }
-
-  .panduit-main-nav .dropdown-menu.multi-level.active{
-    top: 100%;
-    height: 560px;
-  }
-
-  ul.dropdown-menu.multi-level::before {
-    width: 100%;
-    background: #EFEFEF;
-  }
-
-  .panduit-search-box, .panduit-eyebrow-nav{
+  .panduit-search-box {
       display: none;
   }
   .panduit-hamburger-footer-nav {
@@ -156,39 +106,14 @@ ul.dropdown-menu.multi-level::before {
       color: #56575A;
   }
 
+  .panduit-main-nav .dropdown-menu, .panduit-main-nav .dropdown-submenu {
+    position: absolute;
+    background: white;
+    width: 100%;
+  }
+
   .panduit-hamburger-footer-nav .pdt-footer-link a {
     text-transform: none;
   }
 
-  .panduit-main-nav li.open > .dropdown-toggle::after, .dropdown-submenu.active>a i.caret, .dropdown-submenu:hover>.dropdown-menu{
-    display: none;
-  }
-  .dropdown-submenu.active:hover>.dropdown-menu{
-    display: block;
-  }
-
-  .dropdown-submenu>a i.caret, .panduit-navbar li .dropdown-toggle i.caret {
-    content: '';
-    display: inline-block;
-    width: 0;
-    height: 0;
-    vertical-align: middle;
-    border-left: 6px solid;
-    border-bottom: 6px solid transparent;
-    border-top: 6px solid transparent;
-    float: right;
-  }
-
-  .dropdown-submenu.active>a i.caret.caret-right, .panduit-navbar li.open > .dropdown-toggle i.caret {
-    content: '';
-    display: inline-block;
-    width: 0;
-    height: 0;
-    vertical-align: middle;
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
-    border-right: 6px solid;
-    border-left: 0px;
-    float: left;
-  }
 }
