@@ -12,10 +12,10 @@
 //===============================================
 // Initiate ellipsis for text
 //================================================
-(function() {
-	$('.line-ellipse').each(function(){
-		var lines = $(this).data('lines') ? $(this).data('lines') : 2;
-		$(this).ellipsis({ lines: lines, responsive: true });
-	});
-})();
+// (function() {
+// 	$('.line-ellipse').each(function(){
+// 		var lines = $(this).data('lines') ? $(this).data('lines') : 2;
+// 		$(this).ellipsis({ lines: lines, responsive: true });
+// 	});
+// })();
 
