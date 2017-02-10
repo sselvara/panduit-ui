@@ -98,13 +98,35 @@ ul.dropdown-menu.multi-level::before {
 .dropdown-submenu>a:after, .dropdown-submenu>a i {
   display: none;
 }
+
+.panduit-search-box .glyphicon-search{
+  top: 7px;
+}
 @media all and (max-width: 768px) {
   .header-container {
     width: 100%;
   }
 
+  .panduit-navbar .nav {
+    margin: 0 -15px;
+  }
+  .panduit-navbar, .panduit-navbar li {
+    border-bottom: 1px solid #DCDCDC;
+  }
+
   .panduit-navbar .navbar-collapse.collapse.in {
     width: 90%;
+    background: #FBFBFB;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .panduit-navbar .navbar-nav {
+      float: none;
+  }
+
+  .panduit-navbar .nav > li {
+    text-align: center;
   }
 
   .panduit-main-nav .dropdown-menu.active {
@@ -113,6 +135,10 @@ ul.dropdown-menu.multi-level::before {
     height: 419px;
     overflow-x: hidden;
     top: 100%;
+  }
+
+  .panduit-main-nav .dropdown-menu.multi-level {
+    width: 100%;
   }
 
   .panduit-main-nav .dropdown-menu.multi-level.active, li.dropdown-submenu.active.show-menu {
@@ -127,9 +153,18 @@ ul.dropdown-menu.multi-level::before {
     transition: transform 0.35s;
   }
 
-  .panduit-main-nav .dropdown-menu.multi-level.active{
-    top: 100%;
-    height: 560px;
+  li.dropdown-submenu.active.show-menu > a {
+    color: #56575A;
+    background-color: #FBFBFB;
+    text-align: center;
+    border-bottom: 1px solid #DCDCDC;
+  }
+
+  .panduit-main-nav .dropdown-menu.multi-level.active {
+    top: 102%;
+    height: auto;
+    margin: 0;
+    padding: 0;
   }
 
   ul.dropdown-menu.multi-level::before {
@@ -137,8 +172,21 @@ ul.dropdown-menu.multi-level::before {
     background: #EFEFEF;
   }
 
-  .panduit-search-box, .panduit-eyebrow-nav{
+  .panduit-search-box {
+    position: absolute;
+    top: 7px;
+    margin: 0;
+    margin-left: 70px;
+    padding: 0;
+  }
+
+  .panduit-search-box input, .panduit-search-box .form-control, .panduit-eyebrow-nav{
       display: none;
+  }
+
+  .panduit-search-box .glyphicon-search{
+    top: 0;
+    line-height: 1;
   }
   .panduit-hamburger-footer-nav {
     display: block;
@@ -150,10 +198,18 @@ ul.dropdown-menu.multi-level::before {
 
   .panduit-hamburger-footer-nav .pdt-more-info-soc {
     background: #EFEFEF;
+    padding: 10px;
+    text-align: center;
+    margin-top: 0;
   }
 
   .panduit-hamburger-footer-nav .pdt-more-info-soc i {
       color: #56575A;
+      font-size: 30px;
+  }
+
+  .panduit-hamburger-footer-nav .pdt-more-info-soc li {
+    border: none;
   }
 
   .panduit-hamburger-footer-nav .pdt-footer-link a {
@@ -190,5 +246,15 @@ ul.dropdown-menu.multi-level::before {
     border-right: 6px solid;
     border-left: 0px;
     float: left;
+  }
+
+  .dropdown-submenu.active>a i.caret.caret-right {
+    margin-right: 10px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .panduit-search-box {
+    top: 20px;
   }
 }
