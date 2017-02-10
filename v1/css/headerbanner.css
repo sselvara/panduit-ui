@@ -1,9 +1,18 @@
 .upperHeader {
-	background-color:#EFEFEF;
+    background-color:#EFEFEF;
     border-top:1px solid #95989A;
 }
+.header-banner-content.content-right
+{  padding: 35px 110px 0;
+    right:0
+}
+
+.header-banner-content.content-left
+{    padding: 50px 100px 0;
+    left:0
+}
 .upperHeader h6 {
-	    padding: 20px 0 20px 150px;
+        padding: 20px 0 20px 150px;
         color: rgba(84,85,89,0.5);
 }
 
@@ -11,26 +20,32 @@
     padding: 100px 170px 105px 109px;
 }
 .header-banner {
-	position:relative;
-    min-height: 240px;
+    position:relative;
+   /** min-height: 240px;**/
 }
 .header-banner-content {
     position: absolute;
-    left: 0;
     top: 0;
-    padding: 50px 101px 105px 150px;
 }
 
 
 @media (max-width: 768px){
-	.header-banner-content {
+    .header-banner-content {
     padding: 30px 15px;;
 }
 .upperHeader h6 {
         padding: 5px 0 5px 50px;
 }
 .header-banner {
-    min-height: 145px;
+   /** min-height: 145px;*//
+}
+.header-banner-content.content-right {
+    padding: 17px 118px 0;
+    right: 0;
+}
+.header-banner-content.content-left {
+    padding: 20px 20px 0;
+    left: 0;
 }
 }
 
@@ -43,6 +58,14 @@
        padding: 5px 0 5px 10px;;
 }
 .header-banner {
-    min-height: 149px;
+   /** min-height: 149px;**/
+}
+.header-banner-content.content-right {
+    padding: 1px 18px 0;
+    right: 0;
+}
+.header-banner-content.content-left {
+    padding: 1px 18px 0;
+    right: 0;
 }
 }

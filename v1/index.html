@@ -9,13 +9,14 @@
     <!-- Bootstrap -->
     <link href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="libs/repaintless/repaintless-css/repaintless.min.css" rel="stylesheet">
-     <link href="css/panduit.css" rel="stylesheet">
+    <link href="css/ellipsis.css" rel="stylesheet">
+    <link href="css/panduit.css" rel="stylesheet">
     <link href="css/font-icons.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
     <link href="css/checkbox.css" rel="stylesheet">
     <link href="css/navbar.css" rel="stylesheet">
     <style type="text/css">
-        .pdt-hero.pdt-slanted-img img{
+        .pdt-hero.pdt-slanted-img{
             clip-path: url(#clip-slant);
             -webkit-clip-path:url(#clip-slant);
         }
@@ -288,7 +289,7 @@
                             <!-- <a href="#">   this should be enabled to make the block clickable-->
                                 <img src="images/pdt-fp-quickbuildharnessboards.png"/>
                                 <h3 class="pdt-title hasbar dark line-ellipse">Quick Build Harness Boards</h3>
-                                <h6 class="pdt-text dark line-ellipse">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</h6>
+                                <h6 class="pdt-text dark line-ellipse" data-lines="3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore </h6>
 
                                 <!-- begin cta -->
                                 <h4 class="pdt-cta dark">
@@ -307,7 +308,7 @@
                             <!-- <a href="#">   this should be enabled to make the block clickable-->
                                 <img src="images/pdt-fp-pimconnectivitymodule.png"/>
                                 <h3 class="pdt-title hasbar dark line-ellipse">Pim Connectivity Module</h3>
-                                <h6 class="pdt-text dark line-ellipse">Maecenas dapibus sem metus, a condimentum dui pulvinar vitae</h6>
+                                <h6 class="pdt-text dark line-ellipse" data-lines="3">Maecenas dapibus sem metus, a condimentum dui pulvinar vitae</h6>
 
                                 <!-- begin cta -->
                                 <h4 class="pdt-cta dark">
@@ -326,7 +327,7 @@
                             <!-- <a href="#">   this should be enabled to make the block clickable-->
                                 <img src="images/pdt-fp-cableties.png"/>
                                 <h3 class="pdt-title hasbar dark line-ellipse">Cable Ties</h3>
-                                <h6 class="pdt-text dark line-ellipse">Autem vel eum iure reprehenderit qui in ea voluptate</h6>
+                                <h6 class="pdt-text dark line-ellipse" data-lines="3">Autem vel eum iure reprehenderit qui in ea voluptate</h6>
                                 
                                 <!-- begin cta -->
                                 <h4 class="pdt-cta dark">
@@ -349,19 +350,19 @@
                     <img src="images/bg-value.jpg" alt="image">
                 </picture> 
             </div>             
-            <h2 class="text-center element-animated line-ellipse">Trusted Infrastructure = Trusted Data</h2>
+            <h2 class="text-center element-animated line-ellipse pdt-title">Trusted Infrastructure = Trusted Data</h2>
             <div class="pdt-value-content-wrapper element-animated clearfix">
                 <div class="pdt-value-content col-xs-12 col-sm-4 col-md-4">
-                    <h1 class="text-center">32%</h1>
-                    <h6 class="line-ellipse">Sed quia non numquam eius modi tempora incidunt</h6>
+                    <h1 class="text-center pdt-title">32%</h1>
+                    <h6 class="line-ellipse pdt-text">Sed quia non numquam eius modi tempora incidunt</h6>
                 </div>
                 <div class="pdt-value-content col-xs-12 col-sm-4 col-md-4">
-                    <h1 class="text-center">2/3</h1>
-                    <h6 class="line-ellipse">Autem vel eum iure reprehe nderit qui in ea voluptate</h6>
+                    <h1 class="text-center pdt-title">2/3</h1>
+                    <h6 class="line-ellipse pdt-text">Autem vel eum iure reprehe nderit qui in ea voluptate</h6>
                 </div>
                 <div class="pdt-value-content col-xs-12 col-sm-4 col-md-4">
-                    <h1 class="text-center">76%</h1>
-                    <h6 class="line-ellipse">Nam sit amet tellus non felis dapibus molestie lorem</h6>
+                    <h1 class="text-center pdt-title">76%</h1>
+                    <h6 class="line-ellipse pdt-text">Nam sit amet tellus non felis dapibus molestie lorem</h6>
                 </div>
             </div>
             <!-- begin cta -->
@@ -517,6 +518,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="libs/waypoints/lib/jquery.waypoints.min.js"></script>    
+    <script src="libs/jquery.ellipsis/jquery.ellipsis.min.js"></script>    
     <script src="js/common.js"></script>
 
 </body>
